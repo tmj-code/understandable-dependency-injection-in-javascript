@@ -1,0 +1,124 @@
+:root {
+  --page-background: #BFCDFD;
+  --background: #f0f8ff;
+  --text-color: #444;
+  --accent-primary: #FFD8A8;
+  --accent-secondary: #75BFFF;
+}
+
+body {
+  align-content: center;
+  background: var(--page-background);
+  display: flex;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  justify-content: center;
+}
+
+.app {
+  color: var(--text-color);
+  height: min(36em, 100vh);
+  margin: auto;
+  width: min(20em, 100vw);
+}
+
+footer, header {
+  align-items: center;
+  background: var(--accent-secondary);
+  color: var(--accent-primary);
+  display: flex;
+  height: 1.5em;
+  justify-content: center;
+  width: 100%;
+}
+
+header {
+  font-size: 2em;
+}
+
+main {
+  background: var(--background);
+  height: calc(100% - 4.5em);
+  overflow-y: auto;
+}
+
+.button {
+  background: var(--accent-secondary);
+  border: thin solid var(--text-color);
+  border-radius: 0.25em;
+  color: inherit;
+  cursor: pointer;
+  display: block;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--accent-primary);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  align-items: center;
+  border-bottom: thin solid var(--page-background);
+  display: flex;
+}
+
+.post-list li:hover {
+  background: var(--accent-primary);
+}
+
+.post-list li a {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  height: 4em;
+  padding: 0 1em;
+  text-decoration: none;
+  width: calc(100% - 4.5em);
+}
+
+.post-list > .button {
+  margin: 0.5em;
+}
+
+.post-form {
+  height: calc(100% - 2em);
+  margin: 1em;
+}
+
+.post-form label {
+  display: block;
+  margin: 1em 0;
+}
+
+.post-form label:last-of-type {
+  height: calc(100% - 9em);
+}
+
+.post-form label span {
+  display: block;
+}
+
+.post-form input, .post-form textarea {
+  font: inherit;
+  width: calc(100% - 0.5em);
+}
+
+.post-form textarea {
+  height: calc(100% - 2em);
+}
+
+.post-form .button {
+  width: 100%;
+}
+
+.post-form .button:last-of-type {
+  margin-top: 0.5em;
+}
